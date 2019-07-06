@@ -15,10 +15,16 @@
    <a target='_blank' href="https://developers.docusign.com/esign-rest-api/reference/Envelopes/Envelopes/create">Envelopes::create</a>.
 </p>
 
-<p>The access-code to utilize the example provided is: <strong>NJ9@D1</strong></p>
 <% include ../../partials/gitSource %>
 <form class="eg" action="" method="post" data-busy="form">
-    <div class="form-group">
+  <div class="form-group">
+    <label for="signerEmail">Access Code</label>
+    <input type="text" class="form-control" id="accessCode" name="accessCode"
+           aria-describedby="accessHelp" placeholder="NJ9@D1" required
+           value="">
+    <small id="accessHelp" class="form-text text-muted">Send this access code to verify identity</small>
+  </div>
+  <div class="form-group">
       <label for="signerEmail">Signer Email</label>
       <input type="email" class="form-control" id="signerEmail" name="signerEmail"
              aria-describedby="emailHelp" placeholder="pat@example.com" required
